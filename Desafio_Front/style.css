@@ -210,15 +210,14 @@ h1{
   width: 60%;
 }
 
-.close_modal,
+.close-modal,
 .ampliar{
   color: black;
   position: absolute;
   right: 0;
-  margin-top: 8px;
   margin-right: 8px;
+  margin-top: 8px;
   cursor: pointer;
-  pointer-events: none;
 }
 
 .ampliar{
@@ -235,3 +234,4 @@ h1{
   opacity: 1;
   visibility: visible;
 }
+
