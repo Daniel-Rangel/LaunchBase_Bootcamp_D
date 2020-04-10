@@ -204,6 +204,7 @@ h1{
   height: 65%;
   margin: 20vh auto;
   position: relative;
+  transition: width 200ms;
 }
 
 .max-m{
