@@ -1,0 +1,81 @@
+{% extends "layout.njk"%}
+
+{% block head%}
+  <title>Conteúdo - rocketseat</title>
+{% endblock %}
+ 
+{% block content %}
+{% include "header.njk"%}
+<h1>Cursos oferecidos</h1>
+<section class="cards">
+  <div class="card" id="starter">
+    <span>
+      01
+    </span>
+    <div class="logo">
+      <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg" alt="">
+    </div>
+    <div class="card_footer">
+      <p class="msg"><span>Tornese um programador desejado</span> no mercado de trabalho com o curso gratuitos</p>
+      <div class="info" id="Starter">
+        <p>5 modulos</p>
+        <p class="valor">Free</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="launchbase">
+    <span>
+      02
+    </span>
+    <div class="logo">
+      <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg" alt="">
+    </div>
+    <div class="card_footer">
+      <p class="msg"><span>Tornese um programador desejado</span> no mercado de trabalho com o curso gratuitos</p>
+      <div class="info" id="Starter">
+        <p>5 modulos</p>
+        <p class="valor">Paid out</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="gostack">
+    <span>
+      03
+    </span>
+    <div class="logo" >
+      <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg" alt="">
+    </div>
+    <div class="card_footer">
+      <p class="msg"><span>Tornese um programador desejado</span> no mercado de trabalho com o curso gratuitos</p>
+      <div class="info" id="Starter">
+        <p>5 modulos</p>
+        <p class="valor">Paid out</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+  <!-- Modal -->
+  <div class="modal_over ">
+
+    <div class="modal">
+      <a class="close-modal">
+        <i class="material-icons">
+          close
+        </i>
+      </a>
+      <a class="ampliar">
+        <span class="material-icons">
+          crop
+        </span>
+      </a>
+        <iframe src="" frameborder="0">
+        </iframe>
+    </div>
+  </div>
+
+{% include "footer.njk" %}
+{% endblock %}
+
