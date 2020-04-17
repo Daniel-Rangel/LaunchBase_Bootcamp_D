@@ -8,20 +8,19 @@
   {% include "header.njk"%}
   <section>
     <div id="logo">
-      <img src="https://avatars0.githubusercontent.com/u/28929274?s=200&v=4" alt="">
-      <h1>Rocketseat</h1>
+      <img src="{{sobre.imgLogo}}" alt="">
+      <h1>{{ sobre.titulo}}</h1>
       <p>
-        Mais do que uma plataforma de educação em tecnologia,
-        somos uma comunidade incrível de programadores em busca do próximo nível
+        {{ sobre.descricao }}
       </p>
+      <span></span>
     </div>
     <div id="tecno">
       <h3>Tectinologias Usadas:</h3>
       <ul>
-        <li>JavaScript</li>
-        <li>Nodejs</li>
-        <li>ReactJS</li>
-        <li>React Native</li>
+      {% for tec in sobre.tecnologias %}
+        <li>{{ tec.nome}}</li>
+      {% endfor %}
       </ul>
     </div>
   </section>
