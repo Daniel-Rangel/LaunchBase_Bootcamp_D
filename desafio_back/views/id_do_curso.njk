@@ -1,14 +1,12 @@
 {% extends "layout.njk"%}
 
 {% block head%}
-  <title>Conteúdo - rocketseat</title>
+  <title>Card - rocketseat</title>
 {% endblock %}
  
 {% block content %}
 {% include "header.njk"%}
-<h1>Cursos oferecidos</h1>
 <section class="cards">
-  {% for curso in cursos %}
   <div class="card" id="{{curso.id}}">
     <span>
       {{curso.nCurso}}
@@ -24,27 +22,7 @@
       </div>
     </div>
   </div>
-  {% endfor %}
 </section>
-  <!-- Modal
-  <div class="modal_over ">
-
-    <div class="modal">
-      <a class="close-modal">
-        <i class="material-icons">
-          close
-        </i>
-      </a>
-      <a class="ampliar">
-        <span class="material-icons">
-          crop
-        </span>
-      </a>
-        <iframe src="" frameborder="0">
-        </iframe>
-    </div>
-  </div> -->
-
 {% include "footer.njk" %}
 {% endblock %}
 

@@ -11,12 +11,19 @@ server.set("view engine", "njk")
 
 nunjucks.configure("views",{
   express:server,
-  autoescape: false
+  autoescape: false, // permite o uso das tags html e links
+  noCache: true // faz atualização de cache(cache e o armazenamento automatico do pc em browser)
 })
 
 
-server.get("/", function(req, res){
+server.get("/courses", function(req, res){
   return res.render('courses', {cursos : data})
+})
+
+server.get("/courses/id_do_curso", function(req , res){
+  const id = req.params.id;
+
+  return res.send(`O id fornecido na rota é ${id}`)
 })
 
 server.get("/sobre", function(req,res){
