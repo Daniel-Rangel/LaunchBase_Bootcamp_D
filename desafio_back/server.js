@@ -16,14 +16,15 @@ nunjucks.configure("views",{
 })
 
 
-server.get("/courses", function(req, res){
+server.get("/", function(req, res){
   return res.render('courses', {cursos : data})
 })
 
-server.get("/courses/id_do_curso", function(req , res){
+server.get("/id_do_curso", function(req , res){
   const id = req.params.id;
-
-  return res.send(`O id fornecido na rota é ${id}`)
+  
+  return res.render('id_do_curso')
+  //return res.send(`O id fornecido na rota é ${id}`)
 })
 
 server.get("/sobre", function(req,res){

@@ -255,3 +255,10 @@ iframe{
   font-size: 200px ;
   color: yellow;
 }
+
+/* == cusos ID == */
+
+.cards-curses .card{
+  max-width: 900px;
+  margin: 0 auto;
+}
