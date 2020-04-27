@@ -1,14 +1,13 @@
-{% extends "layout.njk"%}
+{% extends "layout.njk" %}
 
 {% block head%}
-  <title>Card - rocketseat</title>
+  <title>Curso - rocketseat</title>
 {% endblock %}
  
 {% block content %}
 {% include "header.njk"%}
 <section class="cards-curses">
-  <h1>{{video.id}}</h1>
+  <h1>{{curso.id}}</h1>
 </section>
-{% include "footer.njk" %}
 {% endblock %}
 

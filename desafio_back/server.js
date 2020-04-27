@@ -17,29 +17,24 @@ nunjucks.configure("views",{
 
 
 server.get("/", function(req, res){
-  
-
   return res.render('courses', {cursos : data})
 })
 
-server.get("/course/:id", function(req, res){
+server.get("/courses/:id", function(req, res){
   const id = req.params.id
   
-  const video = data.find(function(video){
-    if(video.id == id){
-      return true
-    }
+  const curso = data.find(function(curso){
+      return  curso.id == id
   })
-
-  if(!video){
-    return res.send("Video não encontrado")
+  if(!curso){
+    return res.send("ID não encontrado")
   }
-  console.log(video.id)
-  return res.render('course', {video})
+  console.log(curso)
+  return res.render('cours', {curso})
 })
 
 
-server.get("/about", function(req,res){
+server.get("/sobre", function(req,res){
   const sobre = {
     imgLogo : 'https://avatars0.githubusercontent.com/u/28929274?s=200&v=4',
     titulo : 'Rocketseat',
