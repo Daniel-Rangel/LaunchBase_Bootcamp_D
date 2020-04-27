@@ -1,0 +1,14 @@
+{% extends "layout.njk"%}
+
+{% block head%}
+  <title>Card - rocketseat</title>
+{% endblock %}
+ 
+{% block content %}
+{% include "header.njk"%}
+<section class="cards-curses">
+  <h1>{{video.id}}</h1>
+</section>
+{% include "footer.njk" %}
+{% endblock %}
+

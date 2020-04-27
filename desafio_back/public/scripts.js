@@ -7,27 +7,10 @@ const modal = document.querySelector(".modal")
 for(let card of cards){
   card.addEventListener("click", function(){
     const id = card.getAttribute("id")
-    console.log(id)
-    modalOver.classList.add("active")
-    modal.querySelector("iframe").src = `https://rocketseat.com.br/${id}`
+    window.location.href = `course/${id}`
 
-    let verdadeiro = modal.classList.contains("max-m")
-
-    if(!verdadeiro == true){
-      document.querySelector(".ampliar").addEventListener("click", function(){
-        modal.classList.toggle("max-m")
-      })
-    }else{
-      modal.classList.remove("max-m")
-    }
-    
   })
 }
-/* == remove o modal */
-document.querySelector(".close-modal").addEventListener("click", function(){
-  modalOver.classList.remove("active")
-})
-
 
 
 
