@@ -29,12 +29,10 @@ server.get("/courses/:id", function(req, res){
   if(!curso){
     return res.send("ID não encontrado")
   }
-  console.log(curso)
   return res.render('cours', {curso})
 })
 
-
-server.get("/sobre", function(req,res){
+server.get("/about", function(req,res){
   const sobre = {
     imgLogo : 'https://avatars0.githubusercontent.com/u/28929274?s=200&v=4',
     titulo : 'Rocketseat',

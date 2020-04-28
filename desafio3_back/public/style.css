@@ -258,7 +258,13 @@ iframe{
 
 /* == cusos ID == */
 
-.cards-curses .card{
-  max-width: 900px;
+.cards-curses {
+  max-width: 1600px;
+  height: 900px;
   margin: 0 auto;
+}
+
+.cards-curses iframe{
+  background-color: #fff;
+  margin-top: 5vh;
 }
