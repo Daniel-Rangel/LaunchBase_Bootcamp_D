@@ -7,54 +7,67 @@
 {% block content %}
   {% include "header.njk"%}
   
-  <div class="card">
+  <form class="card">
     <section class="imagem"></section>
     <section class="detalhes">
-      <h3>Detalhes</h3>
+      <h3>Teacher Registration</h3>
       <div class="pessoal">
-
         <div class="item">
           <div>Professor</div>
-          <div>Daniel Fernandes Alves Rangel</div>
+          <input 
+            type="text" 
+            name="name" 
+            placeholder="Digite nome e Ultimo Sobrenome"
+          >
         </div>
         
         <div class="item">
           <div>Idade</div>
-          <div>35</div>
+          <input 
+            type="date" 
+            name="birth"
+          >
         </div>
 
       </div>
 
       <div class="item">
+        <div>Imagem</div>
+        <input 
+          type="url" 
+          name="avatar_url"
+          placeholder="http://"
+        >
+      </div>
+
+      <div class="item">
         <div>Escolaridade</div>
-        <div>
-          <span>Doutorado em Engenharia de Software</span>
-          <span>Analista de dados</span>
-        </div>
+        <select name="schooling">
+          <option value="">Seleione seu Grau de escolaridade</option>
+          <option value="EMC">Ensino Médio Completo</option>
+          <option value="ESC">Ensino Superior Completo</option>
+          <option value="MDr">Mestrado e Doutorado</option>
+        </select>
       </div>
 
       <div class="item">
         <div>Tipo de aulas</div>
         <div>
-          <span>Presencial</span>
-          <span>Online</span>
+          <span><input type="radio" name="typeclass" value="Presencial">Presencial</span>
+          <span><input type="radio" name="typeclass" value="online"> Online</span>
         </div>
       </div>
       
       <div class="item">
         <div>Acompanhamento</div>
         <div>
-          <span>Front-end</span>
-          <span>Back-end</span>
-          <span>Data serice</span>
+          <input type="text" name="" placeholder="Separe as aulas por virgulas">
         </div>
       </div>
-      
       <div class="item">
-        <div>Desde</div>
-        <div>20/02/2020</div>
+        <button type="submit">Salvar</button>
       </div>
     </section>
-  </div>
+  </form>
 
 {% endblock %}
