@@ -1,0 +1,60 @@
+{% extends "layout.njk"%}
+
+{% block head %}
+  <title>Sobre - Rocketseat </title>
+{% endblock %}
+
+{% block content %}
+  {% include "header.njk"%}
+  
+  <div class="card">
+    <section class="imagem"></section>
+    <section class="detalhes">
+      <h3>Detalhes</h3>
+      <div class="pessoal">
+
+        <div class="item">
+          <div>Professor</div>
+          <div>Daniel Fernandes Alves Rangel</div>
+        </div>
+        
+        <div class="item">
+          <div>Idade</div>
+          <div>35</div>
+        </div>
+
+      </div>
+
+      <div class="item">
+        <div>Escolaridade</div>
+        <div>
+          <span>Doutorado em Engenharia de Software</span>
+          <span>Analista de dados</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div>Tipo de aulas</div>
+        <div>
+          <span>Presencial</span>
+          <span>Online</span>
+        </div>
+      </div>
+      
+      <div class="item">
+        <div>Acompanhamento</div>
+        <div>
+          <span>Front-end</span>
+          <span>Back-end</span>
+          <span>Data serice</span>
+        </div>
+      </div>
+      
+      <div class="item">
+        <div>Desde</div>
+        <div>20/02/2020</div>
+      </div>
+    </section>
+  </div>
+
+{% endblock %}
