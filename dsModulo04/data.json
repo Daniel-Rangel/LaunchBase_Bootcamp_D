@@ -1,0 +1,24 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://www.google.com",
+      "name": "Daniel Fernandes Alves Rangel",
+      "birth": 1592352000000,
+      "schooling": "ESC",
+      "typeclass": "Presencial",
+      "school_subjects": "Teste3, teste 4",
+      "create_at": 1591056713217
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://www.google.com",
+      "name": "Lucas Henrique",
+      "birth": 870220800000,
+      "schooling": "MDr",
+      "typeclass": "online",
+      "school_subjects": "Array, php, servidor",
+      "create_at": 1591056823262
+    }
+  ]
+}

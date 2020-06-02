@@ -7,7 +7,7 @@
 {% block content %}
   {% include "header.njk"%}
   
-  <form class="card">
+  <form class="card" method="POST" action="/Teachers">
     <section class="imagem"></section>
     <section class="detalhes">
       <h3>Teacher Registration</h3>
@@ -61,7 +61,7 @@
       <div class="item">
         <div>Acompanhamento</div>
         <div>
-          <input type="text" name="" placeholder="Separe as aulas por virgulas">
+          <input type="text" name="school_subjects" placeholder="Separe as aulas por virgulas">
         </div>
       </div>
       <div class="item">
