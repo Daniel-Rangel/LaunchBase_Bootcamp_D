@@ -1,6 +1,39 @@
 const fs = require('fs')
 const data = require('./data.json')
+const { age } = require('./utils')
+const Intl = require('intl')
 
+exports.initial =  function(req, res){
+    return res.render('teacher/Teachers')
+}
+
+exports.create = function(req,res){
+    return res.render('teacher/create')
+}
+
+exports.show = function(req, res){
+    const { id } = req.params
+
+    const foundTeacher = data.teachers.find(function(teacher){
+        return teacher.id == id
+    })
+
+    if(!foundTeacher) return res.send('Professor não localizado')
+
+
+
+    const teacher = {
+        ...foundTeacher,
+        birth: age(foundTeacher.birth),
+        schooling: '',
+        lesson: foundTeacher.school_subjects.split(',') ,
+        create_at: new Intl.DateTimeFormat('pt-BR').format(foundTeacher.create_at)
+    }
+
+    return res.render('teacher/show', { teacher })
+}
+
+//cria o novo professor.
 exports.post = function(req, res){
 
     const keys = Object.keys(req.body)
@@ -33,7 +66,7 @@ exports.post = function(req, res){
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err){
         if(err) return res.send('erro ao requisitar dados')
 
-        return res.redirect('/Teachers')
+        return res.redirect('/teachers')
     })
 
 }
