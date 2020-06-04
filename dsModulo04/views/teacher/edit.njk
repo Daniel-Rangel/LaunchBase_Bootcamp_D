@@ -5,10 +5,11 @@
 {% endblock %}
 
 {% block content %}
-  {% include "header.njk"%}
-  
-  <form class="card" method="POST" action="/Teachers">
+    {% include "header.njk"%}
+
+    <form class="card" method="POST" action="/teachers">
         {% include 'teacher/fields.njk' %}
-  </form>
+    </form>
 
 {% endblock %}
+

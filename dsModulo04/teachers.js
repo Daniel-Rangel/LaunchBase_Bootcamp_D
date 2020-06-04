@@ -1,6 +1,6 @@
 const fs = require('fs')
 const data = require('./data.json')
-const { age } = require('./utils')
+const { age ,  graduation } = require('./utils')
 const Intl = require('intl')
 
 exports.initial =  function(req, res){
@@ -9,28 +9,6 @@ exports.initial =  function(req, res){
 
 exports.create = function(req,res){
     return res.render('teacher/create')
-}
-
-exports.show = function(req, res){
-    const { id } = req.params
-
-    const foundTeacher = data.teachers.find(function(teacher){
-        return teacher.id == id
-    })
-
-    if(!foundTeacher) return res.send('Professor não localizado')
-
-
-
-    const teacher = {
-        ...foundTeacher,
-        birth: age(foundTeacher.birth),
-        schooling: '',
-        lesson: foundTeacher.school_subjects.split(',') ,
-        create_at: new Intl.DateTimeFormat('pt-BR').format(foundTeacher.create_at)
-    }
-
-    return res.render('teacher/show', { teacher })
 }
 
 //cria o novo professor.
@@ -69,4 +47,31 @@ exports.post = function(req, res){
         return res.redirect('/teachers')
     })
 
+}
+
+exports.show = function(req, res){
+    const { id } = req.params
+
+    const foundTeacher = data.teachers.find(function(teacher){
+        return teacher.id == id
+    })
+
+    if(!foundTeacher) return res.send('Professor não localizado')
+
+
+    
+    const teacher = {
+        ...foundTeacher,
+        birth: age(foundTeacher.birth),
+        schooling: graduation(foundTeacher.schooling),
+        lesson: foundTeacher.school_subjects.split(',') ,
+        create_at: new Intl.DateTimeFormat('pt-BR').format(foundTeacher.create_at)
+    }
+
+    return res.render('teacher/show', { teacher })
+}
+
+exports.edit = function(req, res){
+    
+    res.render('teacher/edit')
 }

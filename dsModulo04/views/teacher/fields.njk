@@ -1,0 +1,61 @@
+<section class="imagem"></section>
+<section class="detalhes">
+    <h3>Teacher Registration</h3>
+    <div class="pessoal">
+        <div class="item">
+            <div>Professor</div>
+            <input 
+            type="text" 
+            name="name" 
+            placeholder="Digite nome e Ultimo Sobrenome"
+            >
+        </div>
+        
+        <div class="item">
+            <div>Idade</div>
+            <input 
+            type="date" 
+            name="birth"
+            >
+        </div>
+    </div>
+
+    <div class="item">
+        <div>Imagem</div>
+        <input 
+            type="url" 
+            name="avatar_url"
+            placeholder="http://"
+        >
+    </div>
+
+    <div class="item">
+        <div>Escolaridade</div>
+        <select name="schooling">
+            <option value="">Seleione seu Grau de escolaridade</option>
+            <option value="EMC">Ensino Médio Completo</option>
+            <option value="ESC">Ensino Superior Completo</option>
+            <option value="MDr">Mestrado e Doutorado</option>
+        </select>
+    </div>
+
+    <div class="item">
+        <div>Tipo de aulas</div>
+        <div>
+            <span><input type="radio" name="typeclass" value="Presencial">Presencial</span>
+            <span><input type="radio" name="typeclass" value="online"> Online</span>
+        </div>
+    </div>
+    
+    <div class="item">
+        <div>Acompanhamento</div>
+        <div>
+            <input type="text" name="school_subjects" placeholder="Separe as aulas por virgulas">
+        </div>
+    </div>
+
+    <div class="item">
+        <button type="submit">Salvar</button>
+    </div>
+    
+</section>

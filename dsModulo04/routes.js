@@ -12,6 +12,8 @@ routes.get("/teachers", teachers.initial)
 routes.get('/teachers/create', teachers.create)
 // mostra teacher do data
 routes.get('/teachers/:id', teachers.show )
+//edita um professor
+routes.get('/teachers/:id/edit', teachers.edit)
 
 //cria um novo professor no data
 routes.post('/teachers', teachers.post)

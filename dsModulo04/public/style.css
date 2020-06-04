@@ -197,7 +197,7 @@ select{
   padding: 12px 8px 12px;
 }
 
-button {
+button , a#btnEdit {
   width: 100%;
   padding: 12px 16px;
   background-color: var(--third-color);
@@ -205,4 +205,11 @@ button {
   font-size: 14px;
   font-weight: bold;
   outline: none;
+}
+
+a#btnEdit{
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
 }
