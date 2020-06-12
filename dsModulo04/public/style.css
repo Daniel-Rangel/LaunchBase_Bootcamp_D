@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root{
-  --second-color: rgba(247, 143, 30, 0.3); /* cor de fundo de box */
-  --third-color: rgba(1, 168, 143, 0.911); /* cor da letra */
-  --fourth-color: rgba(145, 11, 11, 0.8);
+  --second-color: rgba(247, 225, 30, 0.959); /* cor de fundo de box */
+  --third-color: rgba(5, 63, 172, 0.911); /* cor da letra */
+  --fourth-color: rgba(80, 80, 80, 0.8);
 }
 
 *{
@@ -83,7 +83,7 @@ header{
 
 /* detalhes */
 .card{
-  box-shadow: 1px 1px 3px 1px #000;
+  box-shadow: 1px 3px 3px 1px #000;
   animation: up 200ms ease-in-out;
 }
 
@@ -161,8 +161,11 @@ header{
   padding: 4px;
   font-size: 12px;
   text-transform: uppercase;
+  color: white;
 }
-
+.detalhes .item:nth-child(3) span{
+  color: black;
+}
 .detalhes .item span + span{
   margin-left: 4px;
 }
