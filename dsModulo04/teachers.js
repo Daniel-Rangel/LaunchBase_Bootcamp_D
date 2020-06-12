@@ -121,6 +121,7 @@ exports.put = function(req, res){
 
 exports.delete = function(req, res){
     const { id } = req.body
+    console.log(id)
     const filteredTeacher = data.teachers.filter(function(teacher){
         return teacher.id != id
     })
