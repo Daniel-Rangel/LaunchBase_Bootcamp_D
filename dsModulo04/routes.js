@@ -18,6 +18,9 @@ routes.get('/teachers/:id/edit', teachers.edit)
 //cria um novo professor no data
 routes.post('/teachers', teachers.post)
 
+//cria edição
+routes.put('/teachers', teachers.put)
+routes.delete('/teachers', teachers.delete)
 routes.use(function(req, res) {
 res.status(404).render("not-found");
 })

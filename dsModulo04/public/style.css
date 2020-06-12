@@ -122,7 +122,7 @@ header{
   margin: 10px auto !important;
 }
 
-.detalhes .item{
+.detalhes .item {
   padding: 8px 0px 0px;
   border-top: 1px solid var(--third-color);
   max-width: 400px;
@@ -167,7 +167,7 @@ header{
   margin-left: 4px;
 }
 
-.detalhes .item:last-child{
+.detalhes .item:last-child,.detalhes .item:nth-child(7){
   font-size: 14px;
   border: none;
   margin-bottom: 10px;
@@ -213,4 +213,13 @@ a#btnEdit{
   text-align: center;
   text-decoration: none;
   color: #000;
+}
+
+button#btn_delete{
+  background-color: rgba(165, 42, 42, 0.8);
+}
+
+.form_dele{
+  max-width: 400px;
+  margin: 10px auto;
 }
