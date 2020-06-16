@@ -262,6 +262,7 @@ tbody tr td:first-child{
   display: grid;
   grid-template-columns: 54px 1fr;
   align-items: center;
+  font-weight: 500;
 }
 
 tbody tr td:first-child span {
