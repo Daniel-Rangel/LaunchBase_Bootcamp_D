@@ -4,7 +4,7 @@ const { age ,  graduation, date } = require('./utils')
 const Intl = require('intl')
 
 exports.initial =  function(req, res){
-    return res.render('teacher/Teachers', {teachers : data.teachers})
+    return res.render('teacher/Teachers', {teachers : data.teachers })
 }
 
 exports.create = function(req,res){
@@ -107,7 +107,8 @@ exports.put = function(req, res){
 
     const teacher = {
         ...foundTeacher,
-        ...req.body
+        ...req.body,
+        id: Number(req.body.id)
     }
 
     data.teachers[index] = teacher

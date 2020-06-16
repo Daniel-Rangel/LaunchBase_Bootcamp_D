@@ -4,8 +4,8 @@
       "id": 2,
       "avatar_url": "https://images.unsplash.com/photo-1583468991267-3f068b607ae1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=613&q=80",
       "name": "Rodrigo bossini",
-      "birth": 963964800000,
-      "schooling": "ESC",
+      "birth": "2000-07-19",
+      "schooling": "EMC",
       "typeclass": "Presencial",
       "school_subjects": "matematica, fisica",
       "create_at": 1591295389306
