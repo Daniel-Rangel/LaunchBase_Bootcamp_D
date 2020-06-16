@@ -4,7 +4,7 @@ const { age ,  graduation, date } = require('./utils')
 const Intl = require('intl')
 
 exports.initial =  function(req, res){
-    return res.render('teacher/Teachers')
+    return res.render('teacher/Teachers', {teachers : data.teachers})
 }
 
 exports.create = function(req,res){
@@ -33,7 +33,7 @@ exports.show = function(req, res){
     return res.render('teacher/show', { teacher })
 }
 
-//cria o novo professor.
+
 exports.post = function(req, res){
 
     const keys = Object.keys(req.body)
@@ -91,7 +91,7 @@ exports.edit = function(req, res){
     res.render('teacher/edit', {teacher})
 }
 
-//altera o professor
+
 exports.put = function(req, res){
     const { id } = req.body
     let index = 0

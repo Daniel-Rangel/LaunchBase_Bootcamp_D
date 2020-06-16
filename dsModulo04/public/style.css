@@ -227,3 +227,60 @@ button#btn_delete{
   max-width: 400px;
   margin: 10px auto;
 }
+
+/* card-table */
+
+.card-table{
+  display: block;
+  padding: 40px;
+}
+
+.card-table table {
+  width: 100%;
+}
+
+.card-table thead{
+  text-align: left;
+}
+
+.card-table td,.card-table th {
+  padding: 16px;
+  border-bottom: 1px solid #d9d9d9 ;
+}
+
+th {
+  text-transform: uppercase;
+}
+
+tbody tr:last-child td{
+  border: none;
+}
+
+tbody tr td:first-child{
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  align-items: center;
+}
+
+tbody tr td:first-child span {
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid white;
+  box-shadow: 3px 3px 4px -2px rgb(5, 63, 172) ;
+  border-radius: 50%;
+}
+
+tbody tr td:last-child a {
+  background-color: rgba(5, 63, 172, 0.9);
+  padding: 12px;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.card-table td:last-child, .card-table th:last-child{
+  text-align: center;
+}

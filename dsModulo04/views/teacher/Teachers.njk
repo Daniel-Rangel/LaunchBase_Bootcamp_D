@@ -7,53 +7,29 @@
 {% block content %}
   {% include "header.njk"%}
   
-  <div class="card">
-    <section class="imagem"></section>
-    <section class="detalhes">
-      <h3>Detalhes</h3>
-      <div class="pessoal">
+  <div class="card card-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Nome completo</th>
+          <th>Acompanhamento</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for teacher in teachers %}
+        <tr>
+          <td>
+            <span style="background-image: url({{teacher.avatar_url}})"></span>
+            {{teacher.name}}
+          </td>
+          <td>{{teacher.school_subjects}}</td>
+          <td><a href="/teachers/{{teacher.id}}">Ver</a></td>
+        </tr>
+        {% endfor %}
 
-        <div class="item">
-          <div>Professor</div>
-          <div>Daniel Fernandes Alves Rangel</div>
-        </div>
-        
-        <div class="item">
-          <div>Idade</div>
-          <div>35</div>
-        </div>
-
-      </div>
-
-      <div class="item">
-        <div>Escolaridade</div>
-        <div>
-          <span>Doutorado em Engenharia de Software</span>
-        </div>
-      </div>
-
-      <div class="item">
-        <div>Tipo de aulas</div>
-        <div>
-          <span>Presencial</span>
-          <span>Online</span>
-        </div>
-      </div>
-      
-      <div class="item">
-        <div>Acompanhamento</div>
-        <div>
-          <span>Front-end</span>
-          <span>Back-end</span>
-          <span>Data serice</span>
-        </div>
-      </div>
-      
-      <div class="item">
-        <div>Desde</div>
-        <div>20/02/2020</div>
-      </div>
-    </section>
+      </tbody>
+    </table>
   </div>
 
 {% endblock %}
