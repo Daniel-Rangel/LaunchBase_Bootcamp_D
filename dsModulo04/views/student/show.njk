@@ -1,0 +1,64 @@
+{% extends "layout.njk"%}
+
+{% block head %}
+  <title>Sobre - Rocketseat </title>
+{% endblock %}
+
+{% block content %}
+  {% include "header.njk"%}
+  
+  <div class="card">
+    <section 
+      class="imagem" 
+      style="background: url({{teacher.avatar_url}}) no-repeat center center / cover " 
+    ></section>
+    <section class="detalhes">
+      <h3>Detalhes</h3>
+      <div class="pessoal">
+
+        <div class="item">
+          <div>Professor</div>
+          <div>{{teacher.name}}</div>
+        </div>
+        
+        <div class="item">
+          <div>Idade</div>
+          <div>{{teacher.birth}}</div>
+        </div>
+
+      </div>
+
+      <div class="item">
+        <div>Escolaridade</div>
+        <div>
+          <span>{{teacher.schooling}}</span>
+        </div>
+      </div>
+
+      <div class="item">
+        <div>Tipo de aulas</div>
+        <div>
+          <span>{{teacher.typeclass}}</span>
+        </div>
+      </div>
+      
+      <div class="item">
+        <div>Acompanhamento</div>
+        <div>
+          {% for aula in teacher.lesson %}
+            <span>{{ aula }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      
+      <div class="item">
+        <div>Desde</div>
+        <div>{{teacher.create_at}}</div>
+      </div>
+      <div class="item">
+        <a href="{{teacher.id}}/edit" id="btnEdit">Editar</a>
+      </div>
+    </section>
+  </div>
+
+{% endblock %}

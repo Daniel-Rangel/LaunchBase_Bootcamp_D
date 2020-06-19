@@ -19,8 +19,6 @@ nunjucks.configure("views",{
 })
 
 
-
-
 server.listen(5000, function(){
   console.log("rodando")
 })
