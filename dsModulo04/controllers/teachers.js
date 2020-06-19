@@ -4,7 +4,7 @@ const { age ,  graduation, date } = require('../utils')
 const Intl = require('intl')
 
 exports.initial =  function(req, res){
-    return res.render('teacher/Teachers', {teachers : data.teachers })
+    return res.render('teacher/teachers', {teachers : data.teachers })
 }
 
 exports.create = function(req,res){
@@ -14,11 +14,13 @@ exports.create = function(req,res){
 exports.show = function(req, res){
     const { id } = req.params
 
+    console.log(id)
+
     const foundTeacher = data.teachers.find(function(teacher){
         return teacher.id == id
     })
 
-    if(!foundTeacher) return res.send('Professor não localizado')
+    if(!foundTeacher) return res.send('parou não localizado')
 
 
     
