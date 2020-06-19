@@ -4,7 +4,7 @@ const { age ,  graduation, date } = require('../utils')
 const Intl = require('intl')
 
 exports.initial =  function(req, res){
-    return res.render('student/Students', {students : data.students })
+    return res.render('student/students', {students : data.students })
 }
 
 exports.create = function(req,res){
@@ -24,15 +24,11 @@ exports.show = function(req, res){
     
     const student = {
         ...foundStudent,
-        birth: age(foundStudent.birth),
-        schooling: graduation(foundStudent.schooling),
-        lesson: foundStudent.school_subjects.split(',') ,
-        create_at: new Intl.DateTimeFormat('pt-BR').format(foundStudent.create_at)
+        birth: age(foundStudent.birth)
     }
 
     return res.render('student/show', { student })
 }
-
 
 exports.post = function(req, res){
 
@@ -45,11 +41,15 @@ exports.post = function(req, res){
     }
 
     /* descontruindo objeto */
-    let { avatar_url, name , birth, schooling, typeclass, school_subjects} = req.body
+    let { avatar_url, name , birth, email, schooling, hours} = req.body
     
     birth = Date.parse(birth)
-    const id = Number(data.students.length + 1)
-    const create_at = Date.now()
+
+    let id = 1
+    const laststudents = data.students[data.students.length + 1]
+    if(laststudents){
+        id = laststudents.id + 1
+    }
 
     /* savamento de dados */
     data.students.push({
@@ -57,10 +57,9 @@ exports.post = function(req, res){
         avatar_url,
         name,
         birth,
+        email,
         schooling,
-        typeclass,
-        school_subjects,
-        create_at
+        hours
     })
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err){
@@ -90,7 +89,6 @@ exports.edit = function(req, res){
 
     res.render('student/edit', {student})
 }
-
 
 exports.put = function(req, res){
     const { id } = req.body

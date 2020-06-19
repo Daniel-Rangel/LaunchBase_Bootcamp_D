@@ -7,27 +7,29 @@
 {% block content %}
   
   <div class="card card-table">
+    <a href="http:/students/create" class="btnCriar">Novo</a>
     <table>
       <thead>
         <tr>
           <th>Nome completo</th>
-          <th>Acompanhamento</th>
+          <th>Email</th>
+          <th>Ano letivo</th>
           <th>Ação</th>
         </tr>
       </thead>
       <tbody>
-        {% for teacher in teachers %}
+        {% for student in students %}
         <tr>
           <td>
-            <span style="background-image: url({{teacher.avatar_url}})"></span>
-            {{teacher.name}}
+            <span style="background-image: url({{student.avatar_url}})"></span>
+            {{student.name}}
           </td>
           <td>
-            {% for subjects in teacher.school_subjects.split(',') %}
+            {% for subjects in student.school_subjects.split(',') %}
               <span>{{subjects}}</span>
             {% endfor %}
           </td>
-          <td><a href="/teachers/{{teacher.id}}">Ver</a></td>
+          <td><a href="/students/{{student.id}}">Ver</a></td>
         </tr>
         {% endfor %}
 

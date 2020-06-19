@@ -6,6 +6,3 @@ for(let ativo of links){
         ativo.classList.add('ativo')
     }
 }
-
-
-console.log(currentPage)

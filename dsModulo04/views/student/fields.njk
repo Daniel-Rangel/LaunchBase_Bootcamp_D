@@ -1,11 +1,10 @@
 <div class="pessoal">
     <div class="item">
-        <div>Professor</div>
+        <div>Nome</div>
         <input 
             type="text" 
             name="name" 
-            placeholder="Digite nome e Ultimo Sobrenome"
-            value="{{teacher.name}}"
+            value="{{student.name}}"
         >
     </div>
     
@@ -14,7 +13,7 @@
         <input 
             type="date" 
             name="birth"
-            value="{{teacher.birth}}"
+            value="{{student.birth}}"
         >
     </div>
 </div>
@@ -25,65 +24,56 @@
         type="url" 
         name="avatar_url"
         placeholder="http://"
-        value="{{teacher.avatar_url}}"
+        value="{{student.avatar_url}}"
+    >
+</div>
+
+<div class="item">
+    <div>Email</div>
+    <input 
+        type="email" 
+        name="email"
+        value="{{student.email}}"
     >
 </div>
 
 <div class="item">
     <div>Escolaridade</div>
-    <select name="schooling" >
+    <select name="schooling">
         <option 
-            value=""
-        >Seleione seu Grau de escolaridade</option>
+            value="5º"
+        >5º Fundamental</option>
         <option 
-            value="EMC"
-        >Ensino Médio Completo</option>
+            value="6º"
+        >6º Fundamental</option>
         <option 
-            value="ESC"
-        >Ensino Superior Completo</option>
+            value="7º"
+        >7º Fundamental</option>
         <option 
-            value="MDr"
-        >Mestrado e Doutorado</option>
+            value="8º"
+        >8º Fundamental</option>
+        <option 
+            value="1º"
+        >1º Ensino Médio</option>
+        <option 
+            value="2º"
+        >2º Ensino Médio</option>
+        <option 
+            value="3º"
+        >3º Ensino Médio</option>
+
     </select>
 </div>
 
 <div class="item">
-    <div>Tipo de aulas</div>
-    <div>
-        <span>
-            <input 
-                type="radio" 
-                name="typeclass" 
-                value="Presencial"
-                {% if teacher.typeclass == "Presencial" %}
-                    checked
-                {% endif %}
-            >Presencial
-        </span>
-        <span>
-            <input 
-                type="radio" 
-                name="typeclass" 
-                value="online"
-                {% if teacher.typeclass == "online" %}
-                    checked
-                {% endif %}
-            >Online
-        </span>
-    </div>
+    <div>Carga Horas</div>
+    <input 
+        type="number" 
+        name="hours"
+        value="{{student.hours}}"
+    >
 </div>
 
-<div class="item">
-    <div>Acompanhamento</div>
-    <div>
-        <input 
-            type="text" 
-            name="school_subjects" 
-            placeholder="Separe as aulas por virgulas"
-            value="{{teacher.school_subjects}}"
-        >
-    </div>
-</div>
 
 <div class="item">
     <button type="submit">Salvar</button>

@@ -281,13 +281,20 @@ tbody tr td:nth-child(2) span{
   border-radius: 25px;
 }
 
-tbody tr td:last-child a {
+tbody tr td:last-child a, 
+.btnCriar {
   background-color: rgba(5, 63, 172, 0.9);
   padding: 12px;
   color: white;
   font-size: 12px;
   text-decoration: none;
   border-radius: 4px;
+}
+
+.btnCriar{
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 .card-table td:last-child, .card-table th:last-child{
