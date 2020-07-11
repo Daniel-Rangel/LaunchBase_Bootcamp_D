@@ -18,7 +18,13 @@ module.exports = {
         const month = `0${date.getUTCMonth() + 1}`.slice(-2)
         const day = `0${date.getUTCDate()}`.slice(-2)
 
-        return `${year}-${month}-${day}`
+        return {
+            date,
+            year,
+            month,
+            iso: `${year}-${month}-${day}`,
+            birthDay : `${day}/${month}`
+        }
     },
     graduation: function(schooling){
         let skill
@@ -38,6 +44,35 @@ module.exports = {
         }
 
         return skill
+    },
+    grade: function(schooling){
+        if(schooling == '5EF'){
+            return `5º Ano do Ensino Fundamental`
+        }
+
+        if(schooling == '6EF'){
+            return `6º Ano do Ensino Fundamental`
+        }
+
+        if(schooling == '7EF'){
+            return `7º Ano do Ensino Fundamental`
+        }
+
+        if(schooling == '8EF'){
+            return `8º Ano do Ensino Fundamental`
+        }
+
+        if(schooling == '1EM'){
+            return `1º Ano do Ensino Medio`
+        }
+
+        if(schooling == '2EM'){
+            return `2º Ano do Ensino Medio`
+        }
+
+        if(schooling == '3EM'){
+            return `3º Ano do Ensino Medio`
+        }
     }
 
 }

@@ -25,9 +25,10 @@
             {{student.name}}
           </td>
           <td>
-            {% for subjects in student.school_subjects.split(',') %}
-              <span>{{subjects}}</span>
-            {% endfor %}
+            {{student.email}}
+          </td>
+          <td>
+            {{student.schooling}}
           </td>
           <td><a href="/students/{{student.id}}">Ver</a></td>
         </tr>

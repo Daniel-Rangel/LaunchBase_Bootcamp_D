@@ -1,6 +1,6 @@
 const fs = require('fs')
 const data = require('../data.json')
-const { age ,  graduation, date } = require('../utils')
+const { age , date, grade } = require('../utils')
 const Intl = require('intl')
 
 exports.initial =  function(req, res){
@@ -24,7 +24,8 @@ exports.show = function(req, res){
     
     const student = {
         ...foundStudent,
-        birth: age(foundStudent.birth)
+        birth: date(foundStudent.birth).birthDay,
+        schooling: grade(foundStudent.schooling)
     }
 
     return res.render('student/show', { student })
@@ -46,7 +47,7 @@ exports.post = function(req, res){
     birth = Date.parse(birth)
 
     let id = 1
-    const laststudents = data.students[data.students.length + 1]
+    const laststudents = data.students[data.students.length - 1]
     if(laststudents){
         id = laststudents.id + 1
     }
@@ -65,7 +66,7 @@ exports.post = function(req, res){
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err){
         if(err) return res.send('erro ao requisitar dados')
 
-        return res.redirect('/students')
+        return res.redirect(`students/${id}`)
     })
 
 }

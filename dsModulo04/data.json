@@ -6,8 +6,26 @@
       "name": "Henrique",
       "birth": 958867200000,
       "email": "henrique@gamil.com",
-      "schooling": "8º",
+      "schooling": "8EF",
       "hours": "4"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://blog.mepassaai.com.br/wp-content/uploads/2016/09/aprenda-como-ser-um-bom-estudante-com-essas-5-dicas.jpeg",
+      "name": "Lucas Henrique",
+      "birth": 775526400000,
+      "email": "Lucas.Henrique@gmail.com",
+      "schooling": "8EF",
+      "hours": "40"
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://imagenes.universia.net/gc/net/images/educacion/s/se/ser/ser-um-bom-estudante.jpg",
+      "name": "Daneil Rangel",
+      "birth": 646963200000,
+      "email": "dan.rangel@hotmail.com",
+      "schooling": "1EM",
+      "hours": "43"
     }
   ],
   "teachers": [
