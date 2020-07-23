@@ -42,24 +42,31 @@
     <select name="schooling">
         <option 
             value="5EF"
+            {% if student.schooling == "5EF" %} selected {% endif %} 
         >5º Fundamental</option>
         <option 
             value="6EF"
+            {% if student.schooling == "6EF" %} selected {% endif %}
         >6º Fundamental</option>
         <option 
             value="7EF"
+            {% if student.schooling == "7EF" %} selected {% endif %}
         >7º Fundamental</option>
         <option 
             value="8EF"
+            {% if student.schooling == "8EF" %} selected {% endif %}
         >8º Fundamental</option>
         <option 
             value="1EM"
+            {% if student.schooling == "1EM" %} selected {% endif %}
         >1º Ensino Médio</option>
         <option 
             value="2EM"
+            {% if student.schooling == "2EM" %} selected {% endif %}
         >2º Ensino Médio</option>
         <option 
             value="3EM"
+            {% if student.schooling == "3EM" %} selected {% endif %}
         >3º Ensino Médio</option>
 
     </select>

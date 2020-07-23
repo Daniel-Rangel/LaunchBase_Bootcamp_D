@@ -6,16 +6,16 @@
 
 {% block content %}
     <div class="card">
-      <section class="imagem" style="background: url({{teacher.avatar_url}}) no-repeat  center center /cover"></section>
+      <section class="imagem" style="background: url({{student.avatar_url}}) no-repeat  center center /cover"></section>
       <section class="detalhes">
-        <form action="/teachers?_method=PUT" method="POST">
+        <form action="/students?_method=PUT" method="POST">
           <h3>Edit Registration</h3>
-          {% include 'teacher/fields.njk' %}
-          <input type="hidden" name="id" value="{{teacher.id}}">
+          {% include 'student/fields.njk' %}
+          <input type="hidden" name="id" value="{{student.id}}">
         </form>
-        <form class="form_dele" action="/teachers?_method=DELETE" method="POST">
+        <form class="form_dele" action="/students?_method=DELETE" method="POST">
           <button id="btn_delete" type="submit">Deletar</button>
-          <input type="hidden" name="id" value="{{teacher.id}}">
+          <input type="hidden" name="id" value="{{student.id}}">
         </form>
       </section>
     </div>
