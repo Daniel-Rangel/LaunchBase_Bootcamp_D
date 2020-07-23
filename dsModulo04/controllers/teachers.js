@@ -14,7 +14,6 @@ exports.create = function(req,res){
 exports.show = function(req, res){
     const { id } = req.params
 
-    console.log(id)
 
     const foundTeacher = data.teachers.find(function(teacher){
         return teacher.id == id
@@ -28,13 +27,12 @@ exports.show = function(req, res){
         ...foundTeacher,
         birth: age(foundTeacher.birth),
         schooling: graduation(foundTeacher.schooling),
-        lesson: foundTeacher.school_subjects.split(',') ,
+        lesson: foundTeacher.school_subjects.split(','),
         create_at: new Intl.DateTimeFormat('pt-BR').format(foundTeacher.create_at)
     }
 
     return res.render('teacher/show', { teacher })
 }
-
 
 exports.post = function(req, res){
 
@@ -50,7 +48,13 @@ exports.post = function(req, res){
     let { avatar_url, name , birth, schooling, typeclass, school_subjects} = req.body
     
     birth = Date.parse(birth)
-    const id = Number(data.teachers.length + 1)
+
+    let id = 1
+    const laststudents = data.students[data.students.length - 1]
+    if(laststudents){
+        id = laststudents.id + 1
+    }
+
     const create_at = Date.now()
 
     /* savamento de dados */
@@ -92,7 +96,6 @@ exports.edit = function(req, res){
 
     res.render('teacher/edit', {teacher})
 }
-
 
 exports.put = function(req, res){
     const { id } = req.body

@@ -17,47 +17,28 @@
       "email": "Lucas.Henrique@gmail.com",
       "schooling": "8EF",
       "hours": "40"
-    },
-    {
-      "id": 3,
-      "avatar_url": "https://imagenes.universia.net/gc/net/images/educacion/s/se/ser/ser-um-bom-estudante.jpg",
-      "name": "Daneil Rangel",
-      "birth": 646963200000,
-      "email": "dan.rangel@hotmail.com",
-      "schooling": "1EM",
-      "hours": "43"
     }
   ],
   "teachers": [
-    {
-      "id": 2,
-      "avatar_url": "https://images.unsplash.com/photo-1583468991267-3f068b607ae1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=613&q=80",
-      "name": "Rodrigo bossini",
-      "birth": "2000-07-19",
-      "schooling": "",
-      "typeclass": "online",
-      "school_subjects": "matematica, fisica",
-      "create_at": 1591295389306
-    },
     {
       "id": 3,
       "avatar_url": "https://images.unsplash.com/photo-1583468991267-3f068b607ae1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=613&q=80",
       "name": "Joll-wifi",
       "birth": "1993-08-21",
-      "schooling": "",
+      "schooling": "ESC",
       "typeclass": "Presencial",
       "school_subjects": "matematica,fisica,Quimica",
       "create_at": 1591302160036
     },
     {
-      "id": 4,
-      "avatar_url": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-      "name": "Lucas Henrique",
-      "birth": 743990400000,
-      "schooling": "ESC",
-      "typeclass": "online",
-      "school_subjects": "html, css, crossft",
-      "create_at": 1591312324113
+      "id": 5,
+      "avatar_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTBfRry_il9l6-G8HjXLNmkuCHJWyAyRSePJg&usqp=CAU",
+      "name": "nubia",
+      "birth": 792806400000,
+      "schooling": "MDr",
+      "typeclass": "Presencial",
+      "school_subjects": "Biologia, Quimica",
+      "create_at": 1595541860108
     }
   ]
 }
