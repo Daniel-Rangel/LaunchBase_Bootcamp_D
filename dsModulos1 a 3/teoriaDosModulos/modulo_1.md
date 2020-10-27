@@ -23,4 +23,20 @@ Dicas:
 -   Se prepare para o futuro, deixando de lado oque você quer ser, para se preparar no que vai ser.
 - Repetir, revisar e ensinar, para melhorar o aprendizado.
 
+## Cronograma de estudo ( discas )
+
+-   Separe um tempo para estudo, lembrando que o melhor momento é antes do trabalho.
+-   De pelo menos 1H de estudo antes do trabalho até pegar o ritmo e amplie ele com o tempo.
+-   Consentre na adividade sem interrupções. 
+-   Desligue de todas a redes sociais, celulares, ou qualquer coisa que tire do seu conteúdo.
+-   De um tempo para descançar apos um periodo determinado de estudo.
+
+## Fixação de Conteúdo ( dicas )
+
+-   Colocar em pratica oque aprende.
+-   Revisar o conteúdo para.
+-   Pesquisar sobre oque não entendeu e não avançar em caso de duvidas.
+-   Escrever oque entendeu descrevendo a forma que entendeu.
+-   Não decore, aprenda a pesquisar para aprender melhor.
+- Fazer seus projetos pessoais.
 
