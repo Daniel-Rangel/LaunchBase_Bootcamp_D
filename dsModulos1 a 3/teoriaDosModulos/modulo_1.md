@@ -49,3 +49,11 @@ Dicas:
 -   Arrume seu Linkedin.
 -   Ser ativo e postar algo no Linkedin.
 
+## Prejetos Pessoais
+
+-   Crie projetos pessoais, alem do conteúdo.
+-   Replique algo diferente do comum
+-   Replique algo comum.
+-   Sempre que iniciar um projeto jogue no github, para poder ver o desenvolvimento.
+-   Use o figma para reproduzir projetos.
+-   Use o Whimsical, para mapas mentais entre outras coisas.
