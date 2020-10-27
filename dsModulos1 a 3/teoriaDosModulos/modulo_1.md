@@ -40,3 +40,12 @@ Dicas:
 -   Não decore, aprenda a pesquisar para aprender melhor.
 - Fazer seus projetos pessoais.
 
+## Resultado para carreira (objetivos segundarios)
+
+>"Quem não é visto não é lembrado"
+
+-   Sempre commitar.
+-   Aprender como fazer o melhor README.
+-   Arrume seu Linkedin.
+-   Ser ativo e postar algo no Linkedin.
+
