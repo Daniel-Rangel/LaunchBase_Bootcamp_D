@@ -34,9 +34,11 @@ if((idade + contribuicao) >= 85 && sexo == 'f'){
 // anotações e teste
 
 const nome = "Daniel"
-const nome2 = 8
-const nomes = `Olá ${typeof nome2}`
+const aluno1 = 8
+const aluno2 = 7.5
+const media = (aluno1 + aluno2 )/2
+const resultado = `A media é ${media}`
 
-console.log(nomes)
+console.log(resultado)
 
  

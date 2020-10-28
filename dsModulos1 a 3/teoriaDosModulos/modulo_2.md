@@ -57,4 +57,23 @@ const nomes = `Olá ${typeof nome2}`
 console.log(nomes) // retonor será "Olá number" devido ao "typeof"
 ```
 
--[x] typeof revela o tipo primitivo da variavel.
+- **typeof** revela o tipo primitivo da variavel.
+
+## Fazendo cálculos com JavaScript
+Para fazer calculo temos que serguir a mesmas formulas matematicas que aprendemos na escola, dando prioridade a ordem de calculo de acordo com as regras. são eles:
+
+-   calcular primeiro sempre da esquerda para direita;
+-   "()" conchetes serão calculado primeiro;
+-   * ou / será calculado em segundo;
+-   + ou - apos todos os calculos;
+
+#### Exemplo basico
+```
+const nome = "Daniel"
+const aluno1 = 8
+const aluno2 = 7.5
+const media = (aluno1 + aluno2 )/2
+const resultado = `A media é ${media}`
+
+console.log(resultado)
+```
