@@ -11,7 +11,7 @@ Não usar o discord para duvidas tecnicas, temos o forum para tirar essa duvidas
 ## Fortalecerndo sua mentalidade.
 
 Dicas:
->"Não estude o minimo necessário, e faça mais doque foi pedido!"
+>"Não estude o minimo necessário, faça mais doque foi pedido!"
 
 -   Controle a anciedade.
 -   Procure entender o conteúdo e conceito.

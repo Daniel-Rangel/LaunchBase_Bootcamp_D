@@ -30,3 +30,7 @@ if((idade + contribuicao) >= 85 && sexo == 'f'){
 }else{
   console.log(`${nome}, você não pode se aposentar!`)
 }
+
+// anotações e teste
+
+const  nome = "Daniel"
