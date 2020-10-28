@@ -64,8 +64,8 @@ Para fazer calculo temos que serguir a mesmas formulas matematicas que aprendemo
 
 -   calcular primeiro sempre da esquerda para direita;
 -   "()" conchetes serão calculado primeiro;
--   * ou / será calculado em segundo;
--   + ou - apos todos os calculos;
+-   "*" ou "/" será calculado em segundo;
+-   "+" ou "-" apos todos os calculos;
 
 #### Exemplo basico
 ```
