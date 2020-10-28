@@ -17,7 +17,7 @@ console.log(`${nome} Você está acima do peso! IMC é ${imc}`)
 
 // Calculo de aposentadoria
 
-const nome = "Silvana"
+/* const nome = "Silvana"
 const sexo = "f"
 const idade = 48
 const contribuicao = 23
@@ -30,7 +30,9 @@ if((idade + contribuicao) >= 85 && sexo == 'f'){
 }else{
   console.log(`${nome}, você não pode se aposentar!`)
 }
-
+ */
 // anotações e teste
 
 const  nome = "Daniel"
+
+console.log(nome)
