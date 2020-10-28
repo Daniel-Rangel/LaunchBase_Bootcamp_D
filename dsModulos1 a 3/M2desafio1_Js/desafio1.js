@@ -33,6 +33,10 @@ if((idade + contribuicao) >= 85 && sexo == 'f'){
  */
 // anotações e teste
 
-const  nome = "Daniel"
+const nome = "Daniel"
+const nome2 = 8
+const nomes = `Olá ${typeof nome2}`
 
-console.log(nome)
+console.log(nomes)
+
+ 
