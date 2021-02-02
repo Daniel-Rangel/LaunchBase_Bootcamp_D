@@ -27,4 +27,4 @@ A partir do arquivo do desafio 2.2, adicionar no header um link chamado Conteúd
 - O modal nunca deve abrir maximizado
 
 
-> estudo para renovação de repositorio com atualização e revisão ( dia 3 30/01)
+> estudo para renovação de repositorio com atualização e revisão ( dia 4 01/02)
