@@ -29,4 +29,4 @@ A partir do arquivo do desafio 2.2, adicionar no header um link chamado Conteúd
 
 > estudo para renovação de repositorio com atualização e revisão rocket ( 15/02 )
 > Organização de repositorios/ estudo de sass ( 16/02 )
-
+> estudo com nlw da rocket (22/02)
